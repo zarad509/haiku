@@ -19,6 +19,7 @@ body {
 }
 
 .grid-container {
+	/* transform: skew(10deg); */
 	display: grid;
 	/* grid-template-columns: 1fr 1fr 1fr; */ /* spaces out text into 3 columns */
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* repeat columns, auto fit */
@@ -26,8 +27,38 @@ body {
 	margin: 10% 4rem 0 4rem;
 }
 
-.last {
-	padding-bottom: 2rem;
-	border-bottom: 2px solid rgb(220, 200, 180); 
+div {
+	transition-property: transform;
+	transition-duration: 3s;
 }
 
+.last {
+	/* transform: rotate(120deg); */
+	padding-bottom: 2rem;
+	border-bottom: 2px solid rgb(220, 200, 180); 
+	
+}
+
+/*
+.last:hover {
+	animation-name: growAndGlow;
+	animation-duration: 3s;
+}
+*/
+
+@keyframes growAndGlow {
+	from {
+		color: whitesmoke;
+	}
+
+	50% {
+		color: dodgerblue;
+		transform: skewX(10deg);
+	}
+
+	to {
+		transform: scale(3);
+		color: red;
+	}
+
+}
