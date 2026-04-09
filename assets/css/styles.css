@@ -6,10 +6,14 @@ html {
 }
 
 body {
-	margin: 1rem;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: black;
 	color: red;
-	font-size: 5rem;
+	font-size: 2rem;
 	overflow: hidden; /* scrolling cuts off, no automatic scroll */
 	background-image: url(../img/owl.gif);
 	background-repeat: no-repeat;
@@ -24,7 +28,12 @@ body {
 	/* grid-template-columns: 1fr 1fr 1fr; */ /* spaces out text into 3 columns */
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* repeat columns, auto fit */
 	gap: 2rem; /* gap between words */
-	margin: 10% 4rem 0 4rem;
+	margin: 0;
+	max-width: 100%;
+	padding: 1rem;
+	box-sizing: border-box;
+	justify-items: center;
+	text-align: center;
 }
 
 div {
@@ -34,9 +43,6 @@ div {
 
 .last {
 	/* transform: rotate(120deg); */
-	padding-bottom: 2rem;
-	border-bottom: 2px solid rgb(220, 200, 180); 
-	
 }
 
 /*
