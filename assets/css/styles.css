@@ -8,10 +8,10 @@ html {
 body {
 	margin: 1rem;
 	background-color: black;
-	color: whitesmoke;
+	color: red;
 	font-size: 5rem;
 	overflow: hidden; /* scrolling cuts off, no automatic scroll */
-	background-image: url(../img/flames.gif);
+	background-image: url(../img/owl.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
